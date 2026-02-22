@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AquaPro Pool Services Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30">
+<!-- 1. Sticky Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-2 rounded-lg">
+<span class="material-symbols-outlined text-white text-2xl">pool</span>
+</div>
+<span class="text-xl font-800 tracking-tight text-slate-900 dark:text-white uppercase">AquaPro</span>
+</div>
+<div class="hidden lg:flex items-center space-x-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#blog">Blog</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden xl:flex items-center gap-2 text-primary font-bold" href="tel:8325557890">
+<span class="material-symbols-outlined">call</span>
+                        (832) 555-7890
+                    </a>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                        Get Free Estimate
+                    </button>
+</div>
+</div>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<section class="relative h-[600px] lg:h-[750px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury swimming pool in Houston" class="w-full h-full object-cover" data-alt="Luxury turquoise swimming pool with sparkling water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOgw4S7WYxkdaLQxW3GjNgvMWNI90DapoPBy6om6VAFT_bwXY6elZxqpBej4OTgjxt2Z5pkCcE_IuZQI2N52Uxy2zeVYmMn_l-1Zs7MPBsj4W5pGz8tdwwJnIHhzBsXmBu49jUH9WLeVaG1eBRfXIuEOz0AyGEaJsgJ_zMgJgIX9EqqWeGpjezRP9x_cfED8937KFJrUb-h6PHlZ6yqQtzmzJI9jh33PcVIoNb-NIkPlUU6QaTaTs09u5siWEFb_qFu2H-qiQctjU"/>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-4 bg-primary/20 backdrop-blur-sm border border-primary/30 w-fit px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Houston's Premier Choice</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-800 text-white leading-tight mb-6">
+                    Houston’s #1 Rated Pool Maintenance Experts
+                </h1>
+<p class="text-lg text-slate-200 mb-8 font-medium">
+                    Experience crystal clear water with CPO Certified professionals. Serving The Woodlands, Sugar Land, Katy, and greater Houston.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                        Get a Free Quote
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">call</span>
+                        Call Now
+                    </button>
+</div>
+<div class="mt-8 flex items-center gap-4 text-white/80">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-slate-300"></div>
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-slate-400"></div>
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-slate-500"></div>
+</div>
+<p class="text-sm font-medium">Trusted by 5,000+ Houston Families</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Trust Bar -->
+<section class="bg-white dark:bg-background-dark py-10 border-b border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center text-center">
+<div class="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">award_star</span>
+<span class="text-sm font-bold">BBB A+ Rated</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">workspace_premium</span>
+<span class="text-sm font-bold">CPO Certified</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">shield</span>
+<span class="text-sm font-bold">Fully Insured</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">history</span>
+<span class="text-sm font-bold">20+ Years Experience</span>
+</div>
+<div class="flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">groups</span>
+<span class="text-sm font-bold">500+ Active Clients</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Services Grid -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-800 mb-4">Our Professional Services</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    From routine maintenance to complete renovations, we provide comprehensive care for your aquatic oasis.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">cleaning_services</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Weekly Maintenance</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Full-service cleaning, chemical balancing, and system checks every week.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">build</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Expert Repair</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Diagnosing and fixing leaks, motors, plumbing, and structural issues.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">settings_input_component</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Equipment Upgrades</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Energy-efficient pumps, heaters, and filtration systems installation.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Pool Renovation</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Resurfacing, tiling, and deck remodeling to modernize your backyard.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">business</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Commercial Services</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Compliance-focused maintenance for HOAs, hotels, and apartments.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl transition-all hover:-translate-y-1">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Smart Automation</h3>
+<p class="text-slate-600 dark:text-slate-400 mb-6">Control your pool's lights, temperature, and features from your phone.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. How It Works -->
+<section class="py-24 bg-white dark:bg-background-dark overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-800 mb-4">Our Simple Process</h2>
+<p class="text-slate-600 dark:text-slate-400">Three easy steps to a pristine pool.</p>
+</div>
+<div class="relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/20 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-xl shadow-primary/30 ring-8 ring-white dark:ring-background-dark">
+<span class="material-symbols-outlined text-4xl">calendar_today</span>
+</div>
+<h3 class="text-xl font-bold mb-3">1. Schedule</h3>
+<p class="text-slate-600 dark:text-slate-400">Book your free estimate online or by phone in minutes.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-xl shadow-primary/30 ring-8 ring-white dark:ring-background-dark">
+<span class="material-symbols-outlined text-4xl">edit_note</span>
+</div>
+<h3 class="text-xl font-bold mb-3">2. Custom Plan</h3>
+<p class="text-slate-600 dark:text-slate-400">Receive a tailored maintenance or repair plan for your needs.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mb-6 shadow-xl shadow-primary/30 ring-8 ring-white dark:ring-background-dark">
+<span class="material-symbols-outlined text-4xl">sentiment_very_satisfied</span>
+</div>
+<h3 class="text-xl font-bold mb-3">3. Enjoy Your Oasis</h3>
+<p class="text-slate-600 dark:text-slate-400">Relax while our experts keep your pool sparkling clean.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Testimonials -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-800 mb-4">What Houston Is Saying</h2>
+<div class="flex justify-center gap-1 text-primary">
+<span class="material-symbols-outlined font-fill-1">star</span>
+<span class="material-symbols-outlined font-fill-1">star</span>
+<span class="material-symbols-outlined font-fill-1">star</span>
+<span class="material-symbols-outlined font-fill-1">star</span>
+<span class="material-symbols-outlined font-fill-1">star</span>
+</div>
+<p class="mt-2 text-slate-600 dark:text-slate-400">5.0 Star Rating from 450+ Local Reviews</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+</div>
+<p class="italic text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">"AquaPro transformed our green pool into a sparkling oasis in just one visit. Their weekly service is incredibly reliable!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">SJ</div>
+<div>
+<p class="font-bold">Sarah Jenkins</p>
+<p class="text-xs text-slate-500">The Woodlands, TX</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+</div>
+<p class="italic text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">"They fixed our pool pump and automated everything. Now I can control the heater from my phone. Exceptional work!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">MR</div>
+<div>
+<p class="font-bold">Michael Reed</p>
+<p class="text-xs text-slate-500">Sugar Land, TX</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+<span class="material-symbols-outlined text-sm font-fill-1">star</span>
+</div>
+<p class="italic text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">"Knowledgeable technicians who actually show up when they say they will. Highly recommend for any commercial facility."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">DM</div>
+<div>
+<p class="font-bold">David Miller</p>
+<p class="text-xs text-slate-500">Katy, TX</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Free Quote Form -->
+<section class="py-24 bg-slate-900 dark:bg-background-dark text-white relative overflow-hidden" id="contact">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]">waves</span>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl md:text-5xl font-800 mb-6">Ready for a Sparkling Pool?</h2>
+<p class="text-slate-400 text-lg mb-8">Fill out the form below for a no-obligation, free estimate. Our team will contact you within 24 hours.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-sm text-slate-400">Call Us Directly</p>
+<p class="text-xl font-bold">(832) 555-7890</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-sm text-slate-400">Email Us</p>
+<p class="text-xl font-bold">info@aquapropool.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 lg:p-10 rounded-3xl shadow-2xl">
+<form action="#" class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-slate-700 text-sm font-bold mb-2">Full Name</label>
+<input class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:ring-primary focus:border-primary" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-slate-700 text-sm font-bold mb-2">Phone Number</label>
+<input class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:ring-primary focus:border-primary" placeholder="(000) 000-0000" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-slate-700 text-sm font-bold mb-2">Email Address</label>
+<input class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:ring-primary focus:border-primary" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-slate-700 text-sm font-bold mb-2">Service Type</label>
+<select class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:ring-primary focus:border-primary">
+<option>Weekly Maintenance</option>
+<option>Repair Service</option>
+<option>Equipment Upgrade</option>
+<option>Pool Renovation</option>
+<option>Commercial Care</option>
+</select>
+</div>
+<div>
+<label class="block text-slate-700 text-sm font-bold mb-2">Your Message</label>
+<textarea class="w-full bg-slate-50 border-slate-200 rounded-xl px-4 py-3 text-slate-900 focus:ring-primary focus:border-primary" placeholder="How can we help you?" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-800 py-4 rounded-xl transition-all shadow-lg shadow-primary/30 uppercase tracking-widest text-sm">
+                            Submit Request
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Service Area -->
+<section class="py-24 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-800 mb-4">Proudly Serving Greater Houston</h2>
+<p class="text-slate-600 dark:text-slate-400">If you're in the Houston area, we've got you covered.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">The Woodlands</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Sugar Land</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Katy</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Cypress</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Pearland</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Memorial</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">River Oaks</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Spring</span>
+<span class="px-6 py-3 bg-slate-100 dark:bg-slate-800 rounded-full font-bold hover:bg-primary hover:text-white transition-colors cursor-default">Kingwood</span>
+</div>
+</div>
+</section>
+<!-- 9. Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="bg-primary p-2 rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">pool</span>
+</div>
+<span class="text-xl font-800 uppercase">AquaPro</span>
+</div>
+<p class="text-slate-400 leading-relaxed mb-6">
+                        Houston's premier pool maintenance company providing crystal clear results for luxury residential and commercial pools.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">thumb_up</span>
+</a>
+<a class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">camera_enhance</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Quick Links</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Maintenance Plans</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Repair Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Portfolio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Customer Reviews</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Business Hours</h4>
+<ul class="space-y-4 text-slate-400">
+<li class="flex justify-between"><span>Mon - Fri:</span> <span>7:00 AM - 5:00 PM</span></li>
+<li class="flex justify-between"><span>Saturday:</span> <span>8:00 AM - 12:00 PM</span></li>
+<li class="flex justify-between"><span>Sunday:</span> <span>Closed</span></li>
+<li class="pt-4 text-xs italic">*Emergency repairs available 24/7</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Contact Info</h4>
+<ul class="space-y-4 text-slate-400">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>1234 Westheimer Rd, Houston, TX 77001</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>(832) 555-7890</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>info@aquapropool.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-10 border-t border-slate-800 text-center text-slate-500 text-sm">
+<p>© 2024 AquaPro Pool Services. All rights reserved. CPO Certified #TX-12345678.</p>
+</div>
+</div>
+</footer>
+</body></html>
